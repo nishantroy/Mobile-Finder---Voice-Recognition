@@ -6,6 +6,8 @@ I built this web-app as a prototype for using Voice Recognition (through Annyang
 
 This only works in Google Chrome since Annyang uses Chrome's webkit for Voice Recognition.
 
+Once the speech is parsed, the query is processed by identifying key words and determining the search parameters (storage, price, OS, etc.)
+
 Once you hit Start Listening, allow Chrome to access your microphone. Then, you can say your query.
 
 Example queries :
