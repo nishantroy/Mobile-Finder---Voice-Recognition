@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" ng-app="VR">
+<head>
+
+<!-- Loading scripts-->
+
+<script src="./bower_components/annyang/annyang.js"></script> 
+<script src="./bower_components/bowser/bowser.js"></script>
+<script src="./bower_components/angular/angular.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script> -->
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://lea.verou.me/css3patterns/#cicada-stripes">
+
+<style>
+body{background-color: #6d695c;
+background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+background-size: 70px 120px;}
+
+
+.button-success {
+    background: indianred; /* this is a green */
+    color: whitesmoke;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-search {
+    background: lightgreen;
+    color: dimgrey;
+    border-radius: 4px;
+}
+
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice Recognition Application</title>
+
+
+  
+</head>
+
+<body>
+  <div ng-controller="myController">
+
+   <br>
+      <center>
+   <form class="pure-form">
+      <input class="pure-input-rounded" type="text" ng-model="searchval" placeholder="Search here...">
+    <br><br>
+      <button class="pure-button pure-button-primary" ng-click="startlistening()"> <i class="fa fa-microphone"></i> Start listening. </button>
+      <br>
+      <br>
+      <button class="pure-button button-search" ng-click="myFunction()"> <i class="fa fa-search"></i> Search  </button>
+       <br>
+       <br>
+
+       <button class="pure-button button-success" ng-click="original()"> See the first version of the <br> voice search here! </button>
+
+
+
+
+ <p style="color: #ffffff"> <i>
+      Click "Start Listening", then search, or just type in your query<br><br>
+
+      
+
+1) Search for devices with a certain operating system<br><br>
+2) Search for devices made by a certain manufacturer<br><br>
+3) Search for devices with a certain storage capacity<br><br>
+4) Search for devices with a certain RAM<br><br>
+5) Search for a certain price <br><br>
+
+
+ </i>
+      </center>
+   </form>
+    
+  </div>
+
+
+ 
+  <script>
+
+      if(!bowser.chrome){
+        alert("Your browser will not allow you to use Voice Search! Please visit this site in Google Chrome to enjoy that feature!")
+      }
+      
+
+  </script> 
+  <script src="Controllers.js">
+
+
+   </script>
+
+
+</body>
+</html>

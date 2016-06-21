@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" ng-app="VR">
+<head>
+
+<!-- CSS Style sheet links and style included in tags-->
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://lea.verou.me/css3patterns/#cicada-stripes">
+
+<style>
+body{background-color: #6d695c;
+background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+background-size: 70px 120px;}
+
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice Recognition App</title>
+  
+</head>
+<body>
+   <div ng-controller="myController">
+   <center>
+   <br>
+   <!-- Using PURE css library to customize buttons, form, input style, etc., and add icons-->
+   <form class="pure-form">
+      <input class="pure-input-rounded" type="text" ng-model="searchval" onkeydown="return false;" placeholder="No typing. Voice only!">
+      <br><br>
+      <button class="pure-button pure-button-primary" ng-click="startlistening()"> <i class="fa fa-microphone"></i> Start listening. </button>
+      <br>
+      <br>
+      <!--<button class="pure-button" ng-click="redirect()" ng-bind="button">  </button>
+
+      <br>
+      <br>
+      <br>-->
+
+
+
+ <p style="color: #ffffff">
+      Click "Start Listening", then say one of the commands<br><br>
+
+      Commands are: <br><br>
+
+1) ndtv search _____ = will search NDTV.com for whatever you say after new search <br>
+2) Go to ______ = will open URL you say after (make sure to add .com,.org etc) <br>
+3) Youtube ______ = will search youtube for whatever you say after <br>
+4) Google ______ = will google whatever you say after<br>
+</center>
+
+   </form>
+    
+  </div>
+
+<!-- ANNYANG: Voice Recognition Library
+     BOWSER: Broswer recognition library-->
+  <script src="./bower_components/annyang/annyang.js"></script>
+  <script src="./bower_components/bowser/bowser.js"></script>
+  <script src="./bower_components/angular/angular.min.js"></script>
+  <script src="Controllers.js"></script>
+  <!-- Alert users if their browser is incompatible-->
+  <script>
+
+      if (bowser.chrome) {
+          null;
+      } else {
+          alert("Your browser is incompatible! Please visit this site using either Chrome or Firefox")
+      }
+
+  </script>
+
+
+
+</body>
+</html>
