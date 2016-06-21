@@ -12,9 +12,9 @@ Once you hit Start Listening, allow Chrome to access your microphone. Then, you 
 
 Example queries :
 
-1) "Show me Android devices with 4gb memory and 32gb storage costing less than 50000 rupees."
+*1) "Show me Android devices with 4gb memory and 32gb storage costing less than 50000 rupees."*
 
-2) "Show me Samsung phones with a 5 inch screen."
+*2) "Show me Samsung phones with a 5 inch screen."*
 
 The results are logged to the console as an object, and a URL is generated with the data gathered, but the URL was for testing purposes and is no longer a valid domain.
 
@@ -26,13 +26,10 @@ Once you hit Start Listening, allow Chrome to access your microphone. Then, you 
 
 Here, you have 4 options:
 
-1) "NDTV Search _______" : This will search NDTV.com for whatever is in the blank.
+*1) "NDTV Search _______" : This will search NDTV.com for whatever is in the blank.*
 
-2) "Go to ______" : This will attempt to navigate to the website in the blank. Make sure you add the extension (.com/.org/.net/etc.)
+*2) "Go to ______" : This will attempt to navigate to the website in the blank. Make sure you add the extension (.com/.org/.net/etc.)*
 
-3) "Youtube ______" : This will search YouTube for whatever is in the blank.
+*3) "Youtube ______" : This will search YouTube for whatever is in the blank.*
 
-4) "Google ______" : This will search Google for whatever is in the blank.
-
-
-
+*4) "Google ______" : This will search Google for whatever is in the blank.*
