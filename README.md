@@ -1,21 +1,32 @@
 # VoiceSearch
 
-Using the annyang library along with AngularJS to build a basic voice recognition web-app.
+This is hosted at (this link)[nroy96.github.io] (I am the owner of the nroy96 Github account as well, but primarily use nishantroy as my Github now).
 
-Can search ndtv.com for any news.
-Can go to any website. 
-Can search YouTube
+I built this web-app as a prototype for using Voice Recognition (through Annyang by Tal Ater) to allow users to search for mobile devices that met their needs/wants, while I was interning at NDTV Convergence during the development of NDTV Gadgets 360.
 
-Commands are:
+This only works in Google Chrome since Annyang uses Chrome's webkit for Voice Recognition.
 
-1) ndtv search _____ = will search NDTV.com for whatever you say after new search
-<br>
-2) Go to ______ = will open URL you say after (make sure to add .com,.org etc)
-<br>
-3) Youtube ______ = will search youtube for whatever you say after
-<br>
-4) Google ______ = will google whatever you say after
+Once you hit Start Listening, allow Chrome to access your microphone. Then, you can say your query.
 
-Credits to Tal Ater for developing annyang. 
+Example queries :
 
-I used the code from Joe Maddalone's annyang with angular tutorial to build it.
+1) "Show me Android devices with 4gb memory and 32gb storage costing less than 50000 rupees."
+2) "Show me Samsung phones with a 5 inch screen."
+
+The results are logged to the console as an object, and a URL is generated with the data gathered, but the URL was for testing purposes and is no longer a valid domain.
+
+##First version
+
+Click on the red button to see the first version of the app.
+
+Once you hit Start Listening, allow Chrome to access your microphone. Then, you can say your query.
+
+Here, you have 4 options:
+
+1) "NDTV Search _______" : This will search NDTV.com for whatever is in the blank.
+2) "Go to ______" : This will attempt to navigate to the website in the blank. Make sure you add the extension (.com/.org/.net/etc.)
+3) "Youtube ______" : This will search YouTube for whatever is in the blank.
+4) "Google ______" : This will search Google for whatever is in the blank.
+
+
+
