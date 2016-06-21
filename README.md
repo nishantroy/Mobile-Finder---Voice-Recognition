@@ -1,6 +1,6 @@
 # VoiceSearch
 
-This is hosted at [this link](nroy96.github.io) (I am the owner of the nroy96 Github account as well, but primarily use nishantroy as my Github now).
+This is hosted at [this link](http://nroy96.github.io) (I am the owner of the nroy96 Github account as well, but primarily use nishantroy as my Github now).
 
 I built this web-app as a prototype for using Voice Recognition (through Annyang by Tal Ater) to allow users to search for mobile devices that met their needs/wants, while I was interning at NDTV Convergence during the development of NDTV Gadgets 360.
 
